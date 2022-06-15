@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Latihan2</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
+	<h1><b>PTIK FKIP UNS</b></h1>
+	<p>The <span id="pilih"> Faculty of Teacher Training and Education</span>, <span id="pilih">Sebelas Maret University</span>, Surakarta is an <span id="pilih">Educational Personnel Education Institution (LPTK)</span> which has 24 study programs in 6 majors. Each study program has its own characteristics in producing <span id="pilih">superior, strong, and intelligent educational staff.</span></p>
+	<p>The <span id="pilih">Informatics and Computer Technology Education (PTIK)</span> study program is planned to take shelter in the management of the <span id="pilih">Engineering and Vocational Education (PTK)</span> department. This placement revises our previous statement, where are PTIK study program is under the P.MIPA department. PTIK is a study program that will produce graduates who are <span id="pilih">prioritized to teach in vocational/vocational programs.</span> So, it would be better if PTIK was under the PTK department which oversees vocational programs such as <span id="pilih">Building Engineering Education,</span> and <span id="pilih">Mechanical Engineering Education.</span> To meet the needs of lecturers in the field of information technology that cannot be met by the PTK department, PTIK will conduct <span id="pilih">resource sharing with the mathematics study program.</span></p>
+
+	<button id="rubah">Highlight Paragraf</button>
+	
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#rubah').click(function(){
+				const nodeList = document.querySelectorAll("span");
+
+				if (nodeList[0].style.color!="red") {
+			    	for (let i = 0; i < nodeList.length; i++) {
+			     		$("span").css("backgroundColor", "yellow");
+			     		$("span").css("color", "red");
+			     		$("span").css("fontWeight", "bold"); 
+			    	}
+				}
+				else {
+			    	for (let i = 0; i < nodeList.length; i++) {
+			    		$("span").css("backgroundColor", "white");
+				     	$("span").css("color", "black");
+			    	 	$("span").css("fontWeight", "normal"); 
+			   		}
+				}
+			})
+		})
+
+	</script>
+</body>
+</html>

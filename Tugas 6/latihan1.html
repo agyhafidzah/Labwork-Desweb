@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Latihan1</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+			margin-left: 300px;
+			margin-right: 300px;
+			margin-top: 10%;
+			margin-bottom: 10%;
+			padding: 5%;
+			text-align: center;
+			outline-style: solid;
+			outline-width: 10px;
+			outline-color: red;
+			color: white;
+		}
+	</style>
+	
+</head>
+<body >
+	<center><h3>KALKULATOR<p></h3></center>
+	<label>masukkan angka pertama : </label>
+	<input id="kesatu" size="2"><p>
+	<label>masukkan angka kedua : </label>
+	<input id="kedua" size="4"><p>
+	<label>Hasil :</label> 
+	<input id="hasil" size="20" disabled><p>
+	<button onclick="add()">+</button>
+	<button onclick="min()">-</button>
+	<button onclick="kali()">x</button>
+	<button onclick="bagi()">:</button>
+	
+
+	<script type="text/javascript">
+		function add(){
+			var a,b,c;
+			a = parseInt(document.getElementById("kesatu").value) ;
+			b = parseInt(document.getElementById("kedua").value) ;
+			c = a+b ;
+			document.getElementById("hasil").value = c;
+		} 
+		function min(){
+			var a,b,c;
+			a = parseInt(document.getElementById("kesatu").value) ;
+			b = parseInt(document.getElementById("kedua").value) ;
+			c = a-b ;
+			document.getElementById("hasil").value = c;
+		} 
+		function kali(){
+			var a,b,c;
+			a = parseInt(document.getElementById("kesatu").value) ;
+			b = parseInt(document.getElementById("kedua").value) ;
+			c = a*b ;
+			document.getElementById("hasil").value = c;
+		} 
+		function bagi(){
+			var a,b,c;
+			a = parseInt(document.getElementById("kesatu").value) ;
+			b = parseInt(document.getElementById("kedua").value) ;
+			c = a/b ;
+			document.getElementById("hasil").value = c;
+		} 
+	</script>
+</body>
+</html>

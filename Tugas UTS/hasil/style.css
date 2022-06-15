@@ -1,0 +1,446 @@
+body{
+	background: #ffa67a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	position: relative;
+	width: 100%;
+	max-width: none;
+	min-height: 1000px;
+	max-width: none;
+	background: #fdd7e4;
+	margin: 20px;
+	box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+
+}
+.container .atas{
+	position: absolute;
+	background: #8b0000;
+	width: 100%;
+	left: 0;
+	height: 180px;
+	display: grid;
+	grid-template-rows: 0.25fr 3.5fr 0.25fr;
+	top: 0;
+	max-width: none;
+}
+
+.container .atas .atas1{
+	position: relative;
+	background: #fa8072;
+	padding: 0;
+}
+.container .atas .atas2{
+	position: relative;
+	background: #8b0000;
+	padding: 40px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0;
+}
+.atas2 .imgBox{
+	position: relative;
+	margin: 10px;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 10px 10px 10px 100px;
+	display: flex;
+	flex-direction: row;
+
+}
+.atas2 .imgBox img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.atas2 h2{
+	color: #fff;
+	font-size: 2em;
+	margin: 0;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+	line-height: 1.4em;
+	
+}
+.atas2 h2 span{
+	font-size: 0.7em;
+	font-weight: 300;
+	color: #fdd7e4;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.container .atas .atas3{
+	position: relative;
+	background: #fa8072;
+	padding: 0;
+}
+.container .isi{
+	position: relative;
+	width: 100%;
+	height: 750px;
+	display: grid;
+	max-width: none;
+	min-height: 500px;
+	background: none;
+	grid-template-columns: 1fr 2fr;
+	top: 180px;
+}
+.container .isi .kiri{
+	position: relative;
+	background: #fa8072;
+	padding: 5px 20px 20px 25px;
+	margin: 10px; 
+	border-color: #8b0000;
+	border-style: solid;
+	border-radius: 20px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+.title{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	font-size: 20px;
+	color: #8b0000;
+}
+.biodata ul{
+	min-width: 50px;
+	border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+	border-color: #8b0000;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.biodata ul li{
+	list-style: disc;
+	position: relative;
+	margin: 10px 0;
+	cursor: pointer;
+	color: #8b0000;
+}
+.biodata ul li span{
+	color: #fff;
+	font-weight: 300;
+}
+.contact ul{
+	position: relative;
+	border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+	border-color: #8b0000;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.contact ul li{
+	list-style: none;
+	position: relative;
+	margin: 10px 0;
+	cursor: pointer;
+}
+.contact ul li .icon{
+	display: inline-block;
+	width: 30px;
+	font-size: 18px;
+	color: #8b0000;
+}
+.contact ul li span{
+	color: #fff;
+	font-weight: 300;
+}
+.skill ul{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.skill ul li{
+	list-style: none;
+	position: relative;
+	margin: 10px 0;
+	cursor: pointer;
+}
+.skill ul li span{
+	color: #fff;
+}
+.skill .percent{
+	position: relative;
+	width: 100%;
+	height: 6px;
+	background: #fdd7e4;
+	display: block;
+	margin-top: 5px;
+}
+.skill .percent div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #8b0000;
+}
+.hobi ul{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.hobi ul li{
+	list-style: none;
+	color: #fdd7e4;
+	font-weight: 500;
+	margin: 10px 0;
+}
+.hobi ul li .fa{
+	color: #8b0000;
+	font-size: 18px;
+	width: 20px;
+}
+.container .isi .kanan{
+	position: relative;
+	background: #fa8072;
+	padding: 5px 20px 20px 25px;
+	border-color: #8b0000;
+	border-style: solid;
+	border-radius: 20px;
+	margin: 10px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+.deskripsi{
+	margin-bottom: 10px;
+}
+p{
+	color: #fff;
+	text-align: justify;
+	margin: 0;
+}
+.education ul{
+	position: relative;
+	border-left: 3px solid rgba(255, 255, 255, 0.2);
+	border-color: #8b0000;
+	margin: 0;
+	padding: 0 5px;
+	box-sizing: border-box;
+}
+.education ul li{
+	list-style: none;
+	position: relative;
+	margin: 10px 0;
+	cursor: pointer;
+}
+.education li{
+	margin-bottom: 15px;
+}
+.education h5{
+	color: #8b0000;
+	font-weight: 500;
+	margin-bottom: 10px;
+	margin-top: 0;
+	height: 5px;
+}
+.education ul li span{
+	color: #fff;
+	font-weight: 500;
+	font-size: 15px;
+}
+.education ul li span b{
+	color: #8b0000;
+	font-size: 13px;
+}
+.organisasi .box{
+	display: flex;
+	flex-direction: row;
+	margin:  0;
+}
+.organisasi .box .masa{
+	min-width: 150px;
+}
+.organisasi .box .masa h5{
+	text-transform: uppercase;
+	color: #8b0000;
+	font-weight: 600;
+	height: 0px;
+}
+.organisasi .box .text{
+	display: grid;
+	grid-template-rows: repeat(1, 1fr);
+}
+.organisasi .box .text h4{
+	text-transform: uppercase;
+	color: #8b0000;
+	font-size: 12px;
+	height: 5px;
+}
+.organisasi .box .text p{
+	color: #fff;
+	font-weight: 300;
+
+}
+.container .bawah{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	max-width: none;
+	background: #8b0000;
+	bottom: 0;
+	margin-top: 10px;
+	left: 0;
+}
+
+@media only screen and (max-width: 1080px){
+	.container{
+		max-width: 1080px;
+		min-height: 1800px;
+	}
+	.container .isi{
+		margin: 10px;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.container .isi .kiri{
+		margin: 0 25px 0 10px;
+	}
+	.container .isi .kanan{
+		margin: 10px 25px 0 10px;
+	}
+	.atas2 h2{
+		font-size: 1.5em;
+		font-weight: 600;
+		line-height: 0.8em;
+		margin: 0 0px 0 0px;
+	}
+	.atas2 h2 span{
+		font-size: 0.7em;
+		font-weight: 300;
+		color: #fdd7e4;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	}
+	.atas2 .imgBox{
+		width: 100px;
+		height: 100px;
+		margin: 10px 10px 10px 80px;
+	}
+}
+
+@media only screen and (max-width: 640px){
+	.container{
+		max-width: 640px;
+		min-height: 2000px;
+		max-height: 3000px;
+		margin: 10px 10px 10px 10px;
+		padding: 10px;
+	}
+	.container .isi{
+		margin: 10px;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.container .isi .kiri{
+		margin: 0 25px 0 10px;
+	}
+	.container .isi .kanan{
+		margin: 10px 25px 0 10px;
+	}
+	.organisasi .box .text h4{
+		margin-bottom: 30px
+	}
+	.atas2 .imgBox{
+		width: 80px;
+		height: 80px;
+		margin: 10px 10px 10px 60px;
+	}
+	.atas2 h2{
+		font-size: 1em;
+		font-weight: 600;
+		line-height: 0.8em;
+		margin: 0 ;
+		position: relative;
+	}
+	.atas2 h2 span{
+		font-size: 0.7em;
+		font-weight: 300;
+	}
+}
+@media only screen and (max-width: 500px){
+	.container{
+		max-width: 640px;
+		min-height: 2200px;
+		margin: 10px 10px 10px 10px;
+		padding: 10px;
+	}
+	.container .isi{
+		margin: 10px;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.container .isi .kiri{
+		margin: 0 25px 0 10px;
+	}
+	.container .isi .kanan{
+		margin: 10px 25px 0 10px;
+	}
+	.organisasi .box .text p{
+		margin-top: 20px
+	}
+	.atas2 .imgBox{
+		width: 80px;
+		height: 80px;
+		margin: 10px 10px 10px 40px;
+	}
+	.atas2 h2{
+		font-size: 0.8em;
+		font-weight: 500;
+		line-height: 1em;
+		margin: 0 ;
+		position: relative;
+	}
+	.atas2 h2 span{
+		font-size: 0.7em;
+		font-weight: 300;
+	}
+}
+@media only screen and (max-width: 435px){
+	.container{
+		max-width: 640px;
+		min-height: 2600px;
+		margin: 10px 10px 10px 10px;
+		padding: 10px;
+	}
+	.container .isi{
+		margin: 10px;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.container .isi .kiri{
+		margin: 0 25px 0 10px;
+	}
+	.container .isi .kanan{
+		margin: 10px 25px 0 10px;
+	}
+	.organisasi .box .text p{
+		margin-top: 40px
+	}
+	.atas2 .imgBox{
+		width: 80px;
+		height: 80px;
+		margin: 10px 10px 10px 20px;
+	}
+	.atas2 h2{
+		font-size: 0.8em;
+		font-weight: 500;
+		line-height: 1em;
+		margin: 0 ;
+		position: relative;
+	}
+	.atas2 h2 span{
+		font-size: 0.7em;
+		font-weight: 300;
+	}
+}

@@ -1,0 +1,74 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'arial';
+    background-color: whitesmoke;
+}
+header {
+    height: 7%;
+    margin-bottom: 1.5%;
+}
+header .container-fluid h2, header .container-fluid a{
+    color: black;
+}
+header .container-fluid h2:hover, header .container-fluid a:hover{
+    color: black;
+}
+main {
+    height: 80%;
+}
+main .container {
+    max-width: 100%;
+    height: 100%;
+}
+main .content {
+    background-color: #4b0082;
+}
+main .right {
+    height: 47.5%;
+}
+main .block {
+    height: 5%;
+}
+main .left {
+    height: 100%;
+}
+main h5 {
+    color: black;
+    font-size: 16px;
+}
+main p {
+    color: white;
+    text-align: justify;
+    font-size: 14px;
+}
+footer {
+    margin-top: 0.5%;
+    height: 8%;
+}
+footer div {
+    padding: 10px;
+    height: 100%;
+}
+footer a {
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+}
+footer a:hover {
+    cursor: pointer;
+    color: purple;
+}
+@media (max-width: 576px) {   
+    main p {
+        font-size: 12px;
+    }
+    main .right {
+        height: 45%;
+    }
+    main .block {
+        height: 1em;
+    }
+}
